@@ -5,7 +5,7 @@ import { Highlight2Directive } from './highlight2.directive';
 
 @NgModule({
   imports: [],
-  exports: [],
+  exports: [ HighlightDirective, Highlight2Directive ],
   declarations: [ HighlightDirective, Highlight2Directive ],
   providers: [],
 })

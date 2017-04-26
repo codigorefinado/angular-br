@@ -21,3 +21,7 @@ export class Highlight2Directive {
   }
 }
 
+/**
+ * <P myHighlight2>Ao colocar o mouse sobre,  irá mudar de cor</P>
+ */
+

@@ -24,7 +24,8 @@ export * from './sample.service';
   exports: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    HighlightModule
   ]
 })
 export class SampleModule {
