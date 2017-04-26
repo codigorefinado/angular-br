@@ -1,5 +1,6 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ModuleWithProviders, NgModule } from '@angular/core';
+import { HighlightModule } from './directive/highlight.module';
 import { SampleComponent } from './sample.component';
 import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
@@ -12,12 +13,13 @@ export * from './sample.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule, HighlightModule,
   ],
   declarations: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+
   ],
   exports: [
     SampleComponent,
@@ -29,7 +31,7 @@ export class SampleModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: SampleModule,
-      providers: [SampleService]
+      providers: [ SampleService ]
     };
   }
 }
